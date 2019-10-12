@@ -1,0 +1,434 @@
+<style>
+/* turtle EVERYTHING BUT THE FINS
+-----------------------------*/
+
+/* #container {
+  position: relative;
+} */
+
+.wrapper {
+    display: inline-block;
+    position: relative;
+
+  }
+.bubble {
+  postion: relative;
+  margin-left: 200px;
+  margin-top: -500px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.5);
+  border-right: solid white 7px;
+  animation-name: float;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  cubic-bezier(.43,.17,.75,.95);
+}
+.bubblefive {
+  postion: fixed;
+  margin-left: 300px;
+  margin-top: -200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-top: solid white 6px;
+  background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 12s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.47,.19,.75,.99);
+  animation-delay: 1s;
+}
+
+.bubbletwo {
+  postion: fixed;
+  margin-left: 1400px;
+  margin-top: -170px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+    border-top: solid white 6px;
+    background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 13s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+.bubblethree {
+  postion: fixed;
+  margin-left: 1100px;
+  margin-top: -200px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 16s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.bubblefour {
+  postion: fixed;
+  margin-left: 800px;
+  margin-top: -300px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 13;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.bubblesix {
+  postion: fixed;
+  margin-left: 600px;
+  margin-top: -300px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border-top: solid white 6px;
+  background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 15s;
+  animation-fill-mode: both linear;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.57,.19,.15,.97);
+}
+.bubbleseven {
+  postion: fixed;
+  margin-left: 700px;
+  margin-top: -220px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border-top: solid white 5px;
+  border-left: solid white 8px;
+  background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 17s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.49,.17,.75,.97);
+}
+
+.bubbleeight {
+  postion: relative;
+  margin-right: 2s00px;
+  margin-top: -270px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border-top: solid white 5px;
+  border-left: solid white 8px;
+  background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 21s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.57,.19,.15,.97);
+}
+.bubblenine {
+  postion: fixed;
+  margin-left: 900px;
+  margin-top: -300px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-top: solid white 5px;
+  border-left: solid white 8px;
+  background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 22s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.bubbleten {
+  postion: relative;
+  margin-top: -300px;
+  margin-left: 0px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-top: solid white 5px;
+  border-left: solid white 8px;
+  background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 23s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.bubbleeleven {
+  postion: fixed;
+  margin-left: 700px;
+  margin-top: -200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 13s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.bubbletwelve {
+  postion: fixed;
+  margin-left: 900px;
+  margin-top: -250px;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 20s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.bubblethirteen {
+  postion: fixed;
+  margin-left: 1000px;
+  margin-top: -270px;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.5);
+  animation-name: float;
+  animation-duration: 14s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+  .turtle {
+    postion: relative;
+    width: 200px;
+  	height: 200px;
+    margin: 400px auto;
+    animation: turn;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+
+  }
+#front:hover {
+  transform: rotate(360deg);
+}
+#front {
+  transition: transform 1s;
+  transform-origin: 95% 95%;
+}
+.turtle-head:hover {
+  transform: rotate(360deg);
+}
+.turtle-head {
+          position:relative;
+          top: 110px;
+          left: 140px;
+          background-image: radial-gradient(circle, #4bb148, #21921e);
+          width: 60px;
+          height: 60px;
+          border-radius: 80% 80% 80% 80%;
+          transition: transform 1s;
+        }
+        .right-eye {
+          position: relative;
+          top: 2px;
+          left: 15px;
+          background: black;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+        }
+       .left-eye {
+          position: relative;
+          top: -8px;
+          left: 35px;
+          background: black;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+        }
+      .sparkle {
+        position: relative;
+          top: 2px;
+          left: 5px;
+          background: white;
+          width: 3px;
+          height: 4px;
+          border-radius: 50%;
+      }
+.stitch {
+/*   margin: 2px; */
+position: relative;
+  margin: 3px;
+  width: 45px;
+  height: 45px;
+  border-radius: 20% 20% 70% 70%;
+  border: dashed 2px #2560e8;
+  background: none;
+}
+  .right-cheek {
+    position: relative;
+    top: 2px;
+    left: 75px;
+    background: #2869ff;
+    width: 55px;
+    height: 55px;
+    border-radius: 20% 20% 70% 70%;
+  }
+  .left-cheek {
+    position: relative;
+    top: -55px;
+    left: 9px;
+    background: #2869ff;
+    width: 55px;
+    height: 55px;
+    border-radius: 20% 20% 70% 70%;
+  }
+.shell {
+  position: relative;
+    top: 100px;
+    left: 50%;
+    background-image: radial-gradient(circle, #5fb95c, #4bb148, #24a020);
+/*     background: #24a020; */
+    width: 140px;
+    height: 150px;
+    border-radius: 100% 100% 100% 100%;
+}
+.jorts {
+  position: relative;
+    top: 60px;
+    background: #2560e8;
+    width: 140px;
+    height: 90px;
+    border-radius: 20% 20% 140% 140%;
+  }
+/*TURTLE FINS -----------
+----------------------*/
+.turtle-fins {
+  position: fixed;
+  }
+  .left-hand {
+    position: relative;
+    top: 60px;
+    left: 75px;
+    background: #21921e;
+    width: 40px;
+    height: 95px;
+    border-radius: 60% 75%;
+    transform: rotate(100deg);
+    animation: swim-left;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+  }
+  .right-hand {
+    position: relative;
+    top: 150px;
+    left: 220px;
+    background: #21921e;
+    width: 40px;
+    height: 95px;
+    border-radius: 60% 75%;
+    transform: rotate(-100deg);
+    animation: swim-right;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+  }
+  .right-feet {
+    position: relative;
+    top: 80px;
+    left: 190px;
+    background: #21921e;
+    width: 45px;
+    height: 75px;
+    border-radius: 30% 30% 30% 120%;
+    transform: rotate(-60deg);
+    animation: swim-right;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+  }
+  .left-feet {
+    position: relative;
+    top: 5px;
+    left: 100px;
+    background: #21921e;
+    width: 45px;
+    height: 75px;
+    border-radius: 70% 40% 120% 30%;
+    transform: rotate(60deg);
+    animation: swim-left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+  body {
+    background:#06faf1;
+}
+@keyframes turn {
+0% {
+  transform: rotateZ(-10deg);
+}
+40% { transform: rotateZ(5deg);
+}
+60% {transform: rotateZ(0deg);
+}
+80% {transform: rotateZ(-5deg);
+}
+100% {transform: rotateZ(-10deg);
+}
+}
+@keyframes float {
+  from {transform: translateY(-200px)}
+  to {transform: translateY(1600px)}
+}
+ @keyframes swim-left {
+  0% {
+    transform: rotate(90deg);
+    animation-timing-function: ease-in;
+  }
+  40% {
+    transform: rotate(60deg);
+    animation-timing-function: ease-in;
+  }
+  60% {
+    transform: rotate(65deg);
+  }
+  80% {
+    transform: rotate(75deg);
+  }
+  100% {
+    transform: rotate(90deg);
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes swim-right {
+  0% {
+    transform: rotate(-90deg);
+    animation-timing-function: ease-in;
+  }
+  40% {
+    transform: rotate(-60deg);
+    animation-timing-function: ease-in;
+  }
+  60% {
+    transform: rotate(-65deg);
+  }
+  80% {
+    transform: rotate(-75deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+</style>
