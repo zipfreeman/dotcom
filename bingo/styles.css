@@ -1,0 +1,36 @@
+
+textarea {
+  width: 100px;
+  height: 60px;
+  resize: none;
+}
+
+button {
+  color: #fff;
+  background-color: #f851e6;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.bingo-cell {
+  background-color: #ffe;
+  border: 2px solid #6d6c6c;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+.input-cell {
+  border: none;
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#bingoCardContainer{
+  margin-top: 20px;
+}
